@@ -113,16 +113,10 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.25em;
-  font-weight: 500;
-}
-
 h2 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.875em;
-  color: #e2e3ed;
   margin: 0;
 }
 
@@ -282,16 +276,15 @@ footer .copyright {
 /*Aside*/ 
 
 aside {
-    background-color: #527158;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+  background-color: #527158;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 aside .form {
   margin-top: 30px;
-  width: 100%;
 }
 
 input[type=text] {
@@ -425,6 +418,7 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
+
 .faq .content-wrapper {
   margin: 50px 0 0 0;
   display: flex;
@@ -543,9 +537,26 @@ input[type=button] {
   margin: 100px 0;
 }
 
+h2 {
+  font-size: 2.25em;
+  line-height: 1.333;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+}
+
+/*------Header and Footer Tablet Styles---*/
+
+header {
+  justify-content: space-around;
+  padding: 30px 0;
+}
+
 header .content-wrapper {
-  justify-content: space-between;
   width: 100%;
+  justify-content: space-between;
 }
 
 header figure { 
@@ -556,49 +567,78 @@ header nav {
   width: 20%;
 }
 
+header nav ul {
+  justify-content: space-between;
+}
+
+header nav ul li {
+  font-size: 1em;
+}
+
 .header-divider {
   display: none;
 }
 
+/*Footer*/ 
+
 footer .content-wrapper {
-  display: flex; 
-  justify-content: center;
-  align-items: center; 
-  flex-flow: column wrap;
+  width: 65%;
+  margin: 100px 0;
 }
 
 footer .footer-content {
-  display: flex; 
-  justify-content: space-around;
-  align-items: center; 
-  width: 100%;
-} 
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
 
-footer .contact, 
-footer .social {
-  width: 50%;
+footer .contact {
+  margin-bottom: 0;
+}
+
+footer h4 {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+footer p {
+    line-height: 1.285;
+}
+
+footer .social-icons {
+  width: 12.5em;
+  justify-content: space-between;
+}
+
+footer .copyright {
+  width: 100%;
 }
 
 /*Hero Area*/
 
-.hero-area  .content-wrapper {
-  width: 80%;
-  justify-content: flex-start;
+.hero-area  {
+  min-height: 600px;
 }
 
-aside .content-wrapper {
-  justify-content: flex-start;
+.hero-area h1 {
+  font-size: 3em;
+  line-height: 1;
   margin: 0;
 }
 
-aside .form {  
-  width: 45%;
+/*Aside*/ 
+
+aside .content-wrapper {
+  margin: 50px 0;
+  display: flex; 
   justify-content: space-between;
+  flex-flow: row wrap;
 }
 
-aside .form-description {  
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
   width: 45%;
-  justify-content: space-between;
+  margin: 0;
 }
 
 /*Features*/
@@ -619,158 +659,189 @@ aside .form-description {
   width: 62%;
 }
 
+.features i {
+  margin-bottom: 30px;
+}
+
 /*Reviews*/
 
-.reviews  {
-  width: 100%;
+.reviews article {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .reviews h2 {
-  justify-content: flex-start;
+  width: 85%;
 }
 
-.reviews article p {
-  justify-content: flex-end;
+.reviews h3 {
+  width: 75%;
+  margin: 0;
+}
+
+.reviews article figure,
+.reviews article div {
+  width: 49%;
 }
 
 /* ==========================================================================
    About Page
    ========================================================================== */
 
-   /*Mission*/ 
-
-.mission .content-wrapper h2 {
-     width: 100%;
-   }
-
-.mission .mission-content {
-  width: 100%;
+.mission-content {
   display: flex; 
-  justify-content: center; 
-  align-items: center; 
-}
-
-.mission .mission-content p {
-  display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-flow: column wrap;
-  flex-basis: 50%;
-  width: 50%;
+  flex-flow: row wrap;
 }
 
-.map { 
-  position: relative; 
-  padding-bottom: 56.25%; 
-  height: 0; 
-  overflow: hidden; 
-  max-width: 100%; } 
-  
-.map iframe, .map object, .map embed { 
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  height: 100%;
+  .mission-content p {
+    width: 45%;
+  }
+
+.map figure {
+  padding-bottom: 45.5%;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 80%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-content h4 {
+  font-size: 1.5em;
 }
 
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
 
-main {
-     display: flex; 
-     justify-content: center; 
-     align-items: center;
-     width: 100%;
-}
-
 .faq .content-wrapper {
-  width: 100%;
-  padding: 0;
-}
+  justify-content: space-between;
+  margin: 100px 0;
 
-.faq h2 {
-     width: 100%;
-   }
+}
 
 .faq-content {
-  width: 50%;
+  flex-basis: 45%;
 }   
 
-.faq-content p {
-  width: 90%;
+.faq h2 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.faq h4, 
+.faq p {
+  font-size: .875em;
+  line-height: 1.125;
+}
+
+.faq h4 {
+  margin-bottom: 10px;
 }
 }
 
 
 @media only screen and (min-width: 1200px) {  
   /*Desktop styles here */  
-      .content-wrapper {
-           max-width: 960px;
-      }
+
+  header {
+    padding: 15px 0;
+  }
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+      font-size: 1.875em;
+  }
+
+  p {
+      font-size: 1.125em;
+      line-height: 1.333;
+  }
+
    
-       /* Hero */
-      .hero-area h1 {
-          width: 100%;
-      }
+/* Hero */
+
+
+.hero-area h1 {
+  font-size: 3.75em;
+  width: 80%;
+}
+
+/* Aside */
+aside .content-wrapper {
+  justify-content: space-around;
+}
+
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+  width: 30%;
+}
+
+.form-description p {
+  font-size: 1.125em;
+}
    
-      /* Aside */
-      aside .content-wrapper {
-          justify-content: flex-start;
-      }
+/* Features */
+.features h2 {
+  width: 90%;
+}
    
-      aside .content-wrapper .form-description,
-      aside .content-wrapper .form {
-          width: 45%;
-      }
+.features article {
+  flex-basis: 33%;
+}
    
-      /* Features */
-      .features h2 {
-          width: 90%;
-      }
-   
-      .features article {
-          flex-basis: column wrap;
-      }
-   
-      /* Reviews */ 
-      .reviews article div {
-          width: 100%;
-      }
+/* Reviews */ 
+.reviews article div {
+  width: 42%;
+}
+
+footer h4 {
+  font-size: 1.875em;
+}
    
   /* ==========================================================================
      About Page
      ========================================================================== */
-      .mission h2,
-      .contact-section .content-wrapper h2 {
-          width: 
-      }
+.mission h2,
+.contact-section .content-wrapper h2 {
+  width: 95%;
+}
 
-      .map { 
-        position: relative; 
-        padding-bottom: 56.25%; 
-        height: 0; 
-        overflow: hidden; 
-        max-width: 100%; 
-      } 
-        
-      .map iframe, .map object, .map embed { 
-        position: absolute; 
-        top: 0; 
-        left: 0; 
-        width: 100%; 
-        height: 100%;
-      }
+.map figure {
+  padding-bottom: 37.5%;
+}
+
+.contact-content h4 {
+  font-size: 1.875em;
+}
+   
   /* ==========================================================================
      FAQ Page
      ========================================================================== */
-      .faq h2 {
-          width: 100%;
-      }
+.faq h2 {
+  width: 100%;
+}
+
+.faq h4,
+.faq p {
+  font-size: 1.125em;
+  line-height: 1;
+}
    
   }
 
